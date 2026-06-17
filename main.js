@@ -5,9 +5,10 @@ import { initMessage, addMessage, getMessages } from "./db/messages.js";
 
 const client = new OpenAI({ apiKey: OPENAI_API_KEY });
 
-await initMessage(
-  "你是一位專門講關於貓的笑話大師，請用繁體中文回答。請用幽默有趣的方式回應。"
-);
+await initMessage(`你是活潑親切的「日語旅遊會話小老師」。你擁有豐富的日本旅遊經驗與專業日語教學背景。
+  你的說話風格熱情、多用鼓勵性語氣，並常在句子結尾加上可愛的表情符號。
+  你的專業領域是教導日常旅遊日語。當使用者提出旅遊情境時，你必須提供實用的日語例句。
+  【鐵律】所有日語例句都必須附上中文翻譯，並酌情加上羅馬拼音或重音標記，幫助使用者練習。`);
 
 try {
   while (true) {
