@@ -32,3 +32,5 @@ export async function addMessage(content, role = "user") {
 export function getMessages() {
   return db.data.messages;
 }
+
+export { db }; // 讓主程式可以直接讀取 db.data

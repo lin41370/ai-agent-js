@@ -1,0 +1,70 @@
+{
+  "messages": [
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_hDiTCYFlud4Z8O7MhQhFTauu",
+          "type": "function",
+          "function": {
+            "name": "convert_unit",
+            "arguments": "{\"value\":25,\"from_unit\":\"C\",\"to_unit\":\"F\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": []
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_hDiTCYFlud4Z8O7MhQhFTauu",
+      "name": "convert_unit",
+      "content": "{\"result\":77,\"unit\":\"F\"}"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_AVaIyUWMnSh5e4fJc5yppQ8T",
+          "type": "function",
+          "function": {
+            "name": "convert_unit",
+            "arguments": "{\"value\":100,\"from_unit\":\"km\",\"to_unit\":\"mile\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": []
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_AVaIyUWMnSh5e4fJc5yppQ8T",
+      "name": "convert_unit",
+      "content": "{\"result\":62.137100000000004,\"unit\":\"mile\"}"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_Ug7o6Cw6NI9QJZg5vSZc7yVC",
+          "type": "function",
+          "function": {
+            "name": "convert_unit",
+            "arguments": "{\"value\":70,\"from_unit\":\"kg\",\"to_unit\":\"lb\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": []
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_Ug7o6Cw6NI9QJZg5vSZc7yVC",
+      "name": "convert_unit",
+      "content": "{\"result\":154.3234,\"unit\":\"lb\"}"
+    }
+  ]
+}
